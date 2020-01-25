@@ -48,7 +48,7 @@ if 1 : #for file_name in file_list :
 
     im_w, im_h = im.size
 
-    ############## Text ##############
+    ############## 1) Text ##############
     day, hour = get_date_from_metadata(im)
     text_displayed = "BlaBla!!!, réalisée le {} à {}".format(day,hour)
     #print(text_displayed)
@@ -64,7 +64,7 @@ if 1 : #for file_name in file_list :
     draw.rectangle([(x, y), (x + text_w, y + text_h)], fill=(0,0,0,128))
     draw.text((x, y), text_displayed, font=font)
 
-    ############## Logo ##############
+    ############## 2) Logo ##############
     logo_im = Image.open(logo_path + logo_name)
 
     logo_w, logo_h = logo_im.size
@@ -79,7 +79,7 @@ if 1 : #for file_name in file_list :
 
     im.paste(logo_im,(x,y))
 
-    ########## Border ############
+    ########## 3) Border ############
     size = round(border_size_r * im_h)
     border = Image.new("RGB", (im_w+2*size, im_h+2*size), border_color)
     border.paste(im,(size,size))
