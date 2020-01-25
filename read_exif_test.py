@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 #-*- coding: utf-8 -*-
-""" A non destructive python script to 
-        1) display text from metadata, 
-        2) images,
-        3) add a border
+""" A non destructive python script to add 
+        1) text from metadata, 
+        2) images/logo,
+        3) a border
     to images of a whole folder
     Please refer and edit "Parameters" section """
     
