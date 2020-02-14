@@ -1,10 +1,15 @@
 # DisplayExifOnPhoto
 
-python3 script to add on picture
-- static text + creation time from exif data
-- a small logo or any image you want
-- a border around
+### python3 script to add on picture :
+* a static text + creation time from exif data
+* a small logo or any image you want
+* a border around
 
-you need PIL library to be intalled.
+### dependancies :
+* PIL
 
-Just edit "Parameters" section to change placement, size, and path ofo the different object
+### Usage :
+Just edit "Parameters" section of **_display_exif_on_photo.py_**  to change placement, size, and path of the different object
+then run :
+> python3 display_exif_on_photo.py
+
